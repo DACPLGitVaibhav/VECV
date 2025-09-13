@@ -8328,9 +8328,7 @@
         "x": 110,
         "y": 40,
         "wires": [
-            [
-                "ea34e3131d953102"
-            ]
+            []
         ]
     },
     {
@@ -8798,7 +8796,7 @@
         "type": "function",
         "z": "502c7cc05ab695d2",
         "name": "function 4",
-        "func": "let plcName = \"MainPLC\"; // Customize as needed\nlet statusText = msg.status.text;  // e.g., \"connected\", \"disconnected\"\nlet timestamp = new Date().toISOString();\nif(statusText!= 'online')\n{\nmsg.payload = `[${timestamp}] PLC: ${plcName} Status: ${statusText}\\n`;\nnode.warn(msg.payload);\nreturn msg;\n}\n",
+        "func": "let plcName = \"MainPLC\"; // Customize as needed\nlet statusText = msg.status.text;  // e.g., \"connected\", \"disconnected\"\nlet timestamp = new Date().toLocaleString();\n\nif (statusText == 'offline' )\n{\nmsg.payload = `[${timestamp}] PLC: ${plcName} Status: ${statusText}\\n`;\n\nreturn msg;\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8835,9 +8833,11 @@
         "type": "catch",
         "z": "502c7cc05ab695d2",
         "name": "",
-        "scope": null,
+        "scope": [
+            "01e778e4a88376b9"
+        ],
         "uncaught": false,
-        "x": 200,
+        "x": 190,
         "y": 200,
         "wires": [
             [
