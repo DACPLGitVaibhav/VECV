@@ -147,8 +147,20 @@
         "name": "Main_PLC",
         "vartable": [
             {
-                "addr": "DB428,I166",
-                "name": "g1"
+                "addr": "DB428,W266",
+                "name": "CabinNo"
+            },
+            {
+                "addr": "DB199,DT24",
+                "name": "StartDate"
+            },
+            {
+                "addr": "DB199,DT32",
+                "name": "EndDate"
+            },
+            {
+                "addr": "DB428,I192",
+                "name": "CycleTime"
             }
         ]
     },
@@ -4415,7 +4427,7 @@
         "name": "Cycle Time",
         "vartable": [
             {
-                "addr": "DB428,S248.10",
+                "addr": "DB428,W266",
                 "name": "CabinNo"
             },
             {
@@ -6408,7 +6420,7 @@
         "connmode": "rack-slot",
         "adapter": "",
         "busaddr": 2,
-        "cycletime": 1000,
+        "cycletime": "1000",
         "timeout": 2000,
         "name": "Robot Health Status",
         "vartable": [
@@ -8182,7 +8194,8 @@
         "y": 160,
         "wires": [
             [
-                "5cb5e92877211704"
+                "5cb5e92877211704",
+                "dcb67c1897af8ee8"
             ]
         ]
     },
@@ -8218,8 +8231,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 740,
-        "y": 100,
+        "x": 340,
+        "y": 220,
         "wires": []
     },
     {
@@ -9031,9 +9044,7 @@
         "x": 140,
         "y": 40,
         "wires": [
-            [
-                "b682b57b8c5bee3e"
-            ]
+            []
         ]
     },
     {
@@ -9072,9 +9083,7 @@
         "x": 90,
         "y": 100,
         "wires": [
-            [
-                "b682b57b8c5bee3e"
-            ]
+            []
         ]
     },
     {
