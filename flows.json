@@ -147,20 +147,196 @@
         "name": "Main_PLC",
         "vartable": [
             {
-                "addr": "DB428,W266",
-                "name": "CabinNo"
+                "addr": "DB428,I0",
+                "name": "01_RH"
             },
             {
-                "addr": "DB199,DT24",
-                "name": "StartDate"
+                "addr": "DB428,I2",
+                "name": "02_RH"
             },
             {
-                "addr": "DB199,DT32",
-                "name": "EndDate"
+                "addr": "DB428,I4",
+                "name": "03_RH"
             },
             {
-                "addr": "DB428,I192",
-                "name": "CycleTime"
+                "addr": "DB428,I6",
+                "name": "04_RH"
+            },
+            {
+                "addr": "DB428,I8",
+                "name": "05_RH"
+            },
+            {
+                "addr": "DB428,I10",
+                "name": "06_RH"
+            },
+            {
+                "addr": "DB428,I12",
+                "name": "07_RH"
+            },
+            {
+                "addr": "DB428,I14",
+                "name": "08_RH"
+            },
+            {
+                "addr": "DB428,I16",
+                "name": "09_RH"
+            },
+            {
+                "addr": "DB428,I18",
+                "name": "10_RH"
+            },
+            {
+                "addr": "DB428,I20",
+                "name": "11_RH"
+            },
+            {
+                "addr": "DB428,I22",
+                "name": "12_RH"
+            },
+            {
+                "addr": "DB428,I24",
+                "name": "13_RH"
+            },
+            {
+                "addr": "DB428,I26",
+                "name": "14_RH"
+            },
+            {
+                "addr": "DB428,I28",
+                "name": "15_RH"
+            },
+            {
+                "addr": "DB428,I30",
+                "name": "16_RH"
+            },
+            {
+                "addr": "DB428,I32",
+                "name": "17_RH"
+            },
+            {
+                "addr": "DB428,I34",
+                "name": "18_RH"
+            },
+            {
+                "addr": "DB428,I36",
+                "name": "19_RH"
+            },
+            {
+                "addr": "DB428,I38",
+                "name": "20_RH"
+            },
+            {
+                "addr": "DB428,I40",
+                "name": "21_RH"
+            },
+            {
+                "addr": "DB428,I42",
+                "name": "22_RH"
+            },
+            {
+                "addr": "DB428,I44",
+                "name": "23_RH"
+            },
+            {
+                "addr": "DB428,I46",
+                "name": "24_RH"
+            },
+            {
+                "addr": "DB428,I60",
+                "name": "01_LH"
+            },
+            {
+                "addr": "DB428,I62",
+                "name": "02_LH"
+            },
+            {
+                "addr": "DB428,I64",
+                "name": "03_LH"
+            },
+            {
+                "addr": "DB428,I66",
+                "name": "04_LH"
+            },
+            {
+                "addr": "DB428,I68",
+                "name": "05_LH"
+            },
+            {
+                "addr": "DB428,I70",
+                "name": "06_LH"
+            },
+            {
+                "addr": "DB428,I72",
+                "name": "07_LH"
+            },
+            {
+                "addr": "DB428,I74",
+                "name": "08_LH"
+            },
+            {
+                "addr": "DB428,I76",
+                "name": "09_LH"
+            },
+            {
+                "addr": "DB428,I78",
+                "name": "10_LH"
+            },
+            {
+                "addr": "DB428,I80",
+                "name": "11_LH"
+            },
+            {
+                "addr": "DB428,I82",
+                "name": "12_LH"
+            },
+            {
+                "addr": "DB428,I84",
+                "name": "13_LH"
+            },
+            {
+                "addr": "DB428,I86",
+                "name": "14_LH"
+            },
+            {
+                "addr": "DB428,I88",
+                "name": "15_LH"
+            },
+            {
+                "addr": "DB428,I90",
+                "name": "16_LH"
+            },
+            {
+                "addr": "DB428,I92",
+                "name": "17_LH"
+            },
+            {
+                "addr": "DB428,I94",
+                "name": "18_LH"
+            },
+            {
+                "addr": "DB428,I96",
+                "name": "19_LH"
+            },
+            {
+                "addr": "DB428,I98",
+                "name": "20_LH"
+            },
+            {
+                "addr": "DB428,I100",
+                "name": "21_LH"
+            },
+            {
+                "addr": "DB428,I102",
+                "name": "22_LH"
+            },
+            {
+                "addr": "DB428,I104",
+                "name": "23_LH"
+            },
+            {
+                "addr": "DB428,I106",
+                "name": "24_LH"
             }
         ]
     },
@@ -7233,14 +7409,12 @@
         "endpoint": "ce66f7ece50d94dd",
         "mode": "all",
         "variable": "rbt01",
-        "diff": false,
+        "diff": true,
         "name": "S7",
         "x": 150,
         "y": 180,
         "wires": [
-            [
-                "d9bde5195b941785"
-            ]
+            []
         ]
     },
     {
@@ -7255,9 +7429,48 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 400,
+        "x": 620,
         "y": 180,
         "wires": []
+    },
+    {
+        "id": "7c183a83250c3342",
+        "type": "function",
+        "z": "928a659e27e15d3b",
+        "name": "function 1",
+        "func": "// Store data in flow context\nflow.set(\"myData\", { name: \"John\", age: 30 });\n\n// Retrieve data from flow context\nlet myData = flow.get(\"myData\");\nnode.warn(myData); // Output will be { name: \"John\", age: 30 } after a restart",
+        "outputs": 1,
+        "timeout": "120",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 180,
+        "wires": [
+            [
+                "d9bde5195b941785"
+            ]
+        ]
+    },
+    {
+        "id": "c08d111509847f49",
+        "type": "inject",
+        "z": "928a659e27e15d3b",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "7c183a83250c3342"
+            ]
+        ]
     },
     {
         "id": "e2262b3e34402016",
@@ -7307,7 +7520,7 @@
         "type": "function",
         "z": "4130cccc0fa67e06",
         "name": "function ML_10",
-        "func": "let currentAlarms = msg.payload;\nlet lastAlarms = flow.get(\"lastAlarms\") || {};\nlet rows = [];\n\n\n\n// Loop through alarms\nfor (let key in currentAlarms) {\n    // Rising edge: false → true\n    if (currentAlarms[key] === true && lastAlarms[key] !== true) {\n        rows.push({ AlarmCode: key, Action: \"Insert\",Timestamp:new Date().toISOString() });\n    }\n\n    // Falling edge: true → false\n    if (currentAlarms[key] === false && lastAlarms[key] === true) {\n        rows.push({ AlarmCode: key, Action: \"Update\", Timestamp: new Date().toISOString() });\n    }\n}\n\n// Save state\nflow.set(\"lastAlarms\", currentAlarms);\n//node.warn(rows)\n\n// Send only if something changed\nif (rows.length > 0) {\n    msg.payload = {\n        query: \"EXEC SP_Alarm_Bulk_ML10 @Json\",\n        params: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n        ]\n    };\n    return msg;\n} else {\n    return null;\n}\n",
+        "func": "let currentAlarms = msg.payload;\nlet lastAlarms = flow.get(\"lastAlarms_ML10\") || {};\nlet rows = [];\n\n\n\n// Loop through alarms\nfor (let key in currentAlarms) {\n    // Rising edge: false → true\n    if (currentAlarms[key] === true && lastAlarms[key] !== true) {\n        rows.push({ AlarmCode: key, Action: \"Insert\",Timestamp:new Date().toISOString() });\n    }\n\n    // Falling edge: true → false\n    if (currentAlarms[key] === false && lastAlarms[key] === true) {\n        rows.push({ AlarmCode: key, Action: \"Update\", Timestamp: new Date().toISOString() });\n    }\n}\n\n// Save state\nflow.set(\"lastAlarms_ML10\", currentAlarms);\n//node.warn(rows)\n\n// Send only if something changed\nif (rows.length > 0) {\n    msg.payload = {\n        query: \"EXEC SP_Alarm_Bulk_ML10 @Json\",\n        params: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n        ]\n    };\n    return msg;\n} else {\n    return null;\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7472,7 +7685,7 @@
         "type": "function",
         "z": "48c45cbe6bb6019f",
         "name": "function ML_20",
-        "func": "let currentAlarms = msg.payload;\nlet lastAlarms = flow.get(\"lastAlarms\") || {};\nlet rows = [];\n\n// Loop through alarms\nfor (let key in currentAlarms) {\n    // Rising edge: false → true\n    if (currentAlarms[key] === true && lastAlarms[key] !== true) {\n        rows.push({ AlarmCode: key, Action: \"Insert\", Timestamp: new Date().toISOString() });\n    }\n\n    // Falling edge: true → false\n    if (currentAlarms[key] === false && lastAlarms[key] === true) {\n        rows.push({ AlarmCode: key, Action: \"Update\", Timestamp: new Date().toISOString() });\n    }\n}\n\n// Save state\nflow.set(\"lastAlarms\", currentAlarms);\n\n// Send only if something changed\nif (rows.length > 0) {\n    msg.payload = {\n        query: \"EXEC SP_Alarm_Bulk_ML20 @Json\",\n        params: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n        ]\n    };\n    return msg;\n} else {\n    return null;\n}\n",
+        "func": "let currentAlarms = msg.payload;\nlet lastAlarms = flow.get(\"lastAlarms_ML20\") || {};\nlet rows = [];\n\n// Loop through alarms\nfor (let key in currentAlarms) {\n    // Rising edge: false → true\n    if (currentAlarms[key] === true && lastAlarms[key] !== true) {\n        rows.push({ AlarmCode: key, Action: \"Insert\", Timestamp: new Date().toISOString() });\n    }\n\n    // Falling edge: true → false\n    if (currentAlarms[key] === false && lastAlarms[key] === true) {\n        rows.push({ AlarmCode: key, Action: \"Update\", Timestamp: new Date().toISOString() });\n    }\n}\n\n// Save state\nflow.set(\"lastAlarms_ML20\", currentAlarms);\n\n// Send only if something changed\nif (rows.length > 0) {\n    msg.payload = {\n        query: \"EXEC SP_Alarm_Bulk_ML20 @Json\",\n        params: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n        ]\n    };\n    return msg;\n} else {\n    return null;\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7637,7 +7850,7 @@
         "type": "function",
         "z": "4cb0b90ae176b7d1",
         "name": "function ML_30",
-        "func": "let currentAlarms = msg.payload;\nlet lastAlarms = flow.get(\"lastAlarms\") || {};\nlet rows = [];\n\n// Loop through alarms\nfor (let key in currentAlarms) {\n    // Rising edge: false → true\n    if (currentAlarms[key] === true && lastAlarms[key] !== true) {\n        rows.push({ AlarmCode: key, Action: \"Insert\", Timestamp: new Date().toISOString() });\n    }\n\n    // Falling edge: true → false\n    if (currentAlarms[key] === false && lastAlarms[key] === true) {\n        rows.push({ AlarmCode: key, Action: \"Update\", Timestamp: new Date().toISOString() });\n    }\n}\n\n// Save state\nflow.set(\"lastAlarms\", currentAlarms);\n// Send only if something changed\nif (rows.length > 0) {\n    msg.payload = {\n        query: \"EXEC SP_Alarm_Bulk_ML30 @Json\",\n        params: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n        ]\n    };\n    return msg;\n} else {\n    return null;\n}\n",
+        "func": "let currentAlarms = msg.payload;\nlet lastAlarms = flow.get(\"lastAlarms_ML30\") || {};\nlet rows = [];\n\n// Loop through alarms\nfor (let key in currentAlarms) {\n    // Rising edge: false → true\n    if (currentAlarms[key] === true && lastAlarms[key] !== true) {\n        rows.push({ AlarmCode: key, Action: \"Insert\", Timestamp: new Date().toISOString() });\n    }\n\n    // Falling edge: true → false\n    if (currentAlarms[key] === false && lastAlarms[key] === true) {\n        rows.push({ AlarmCode: key, Action: \"Update\", Timestamp: new Date().toISOString() });\n    }\n}\n\n// Save state\nflow.set(\"lastAlarms_ML30\", currentAlarms);\n// Send only if something changed\nif (rows.length > 0) {\n    msg.payload = {\n        query: \"EXEC SP_Alarm_Bulk_ML30 @Json\",\n        params: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n        ]\n    };\n    return msg;\n} else {\n    return null;\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7802,7 +8015,7 @@
         "type": "function",
         "z": "bc2aab26b1ba020d",
         "name": "function ML_40",
-        "func": "let currentAlarms = msg.payload;\nlet lastAlarms = flow.get(\"lastAlarms\") || {};\nlet rows = [];\n\n// Loop through alarms\nfor (let key in currentAlarms) {\n    // Rising edge: false → true\n    if (currentAlarms[key] === true && lastAlarms[key] !== true) {\n        rows.push({ AlarmCode: key, Action: \"Insert\", Timestamp: new Date().toISOString() });\n    }\n\n    // Falling edge: true → false\n    if (currentAlarms[key] === false && lastAlarms[key] === true) {\n        rows.push({ AlarmCode: key, Action: \"Update\", Timestamp: new Date().toISOString() });\n    }\n}\n\n// Save state\nflow.set(\"lastAlarms\", currentAlarms);\n\n// Send only if something changed\nif (rows.length > 0) {\n    msg.payload = {\n        query: \"EXEC SP_Alarm_Bulk_ML40 @Json\",\n        params: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n        ]\n    };\n    return msg;\n} else {\n    return null;\n}\n",
+        "func": "let currentAlarms = msg.payload;\nlet lastAlarms = flow.get(\"lastAlarms_ML40\") || {};\nlet rows = [];\n\n// Loop through alarms\nfor (let key in currentAlarms) {\n    // Rising edge: false → true\n    if (currentAlarms[key] === true && lastAlarms[key] !== true) {\n        rows.push({ AlarmCode: key, Action: \"Insert\", Timestamp: new Date().toISOString() });\n    }\n\n    // Falling edge: true → false\n    if (currentAlarms[key] === false && lastAlarms[key] === true) {\n        rows.push({ AlarmCode: key, Action: \"Update\", Timestamp: new Date().toISOString() });\n    }\n}\n\n// Save state\nflow.set(\"lastAlarms_ML40\", currentAlarms);\n\n// Send only if something changed\nif (rows.length > 0) {\n    msg.payload = {\n        query: \"EXEC SP_Alarm_Bulk_ML40 @Json\",\n        params: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n        ]\n    };\n    return msg;\n} else {\n    return null;\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7924,7 +8137,7 @@
         "type": "function",
         "z": "d56e9038cfc4ecfb",
         "name": "Filter TRUE tags and prepare SQL",
-        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changedToTrue = [];\n\n// Detect tags changed from false (or undefined) to true\nfor (let tag in current) {\n    if (current[tag] === true && previous[tag] !== true) {\n        changedToTrue.push(tag);\n    }\n}\n\n// Update stored state\nflow.set('previousTags', current);\n\n// Build SQL procedure calls\n\nlet msgs = [];\n\nfor (let i = 0; i < changedToTrue.length; i++) {\n    const key = changedToTrue[i];\n    const parts = key.split('_');\n\n    if (parts.length === 2) {\n        msgs.push({\n            payload: 'USP_Insert_Atc_TipChange_Collision',\n            queryParams: [\n                { name: \"RobotID\", value: parts[0] },\n                { name: \"EventType\", value: parts[1] },\n                { name: \"TimeStamp\", value: new Date().toISOString() }\n            ],\n            queryMode: \"execute\"\n        });\n    }\n}\n\nreturn msgs.length > 0 ? [msgs] : null;\n",
+        "func": "let previous = flow.get('previousTags_ATC') || {};\nlet current = msg.payload;\nlet changedToTrue = [];\n\n// Detect tags changed from false (or undefined) to true\nfor (let tag in current) {\n    if (current[tag] === true && previous[tag] !== true) {\n        changedToTrue.push(tag);\n    }\n}\n\n// Update stored state\nflow.set('previousTags_ATC', current);\n\n// Build SQL procedure calls\n\nlet msgs = [];\n\nfor (let i = 0; i < changedToTrue.length; i++) {\n    const key = changedToTrue[i];\n    const parts = key.split('_');\n\n    if (parts.length === 2) {\n        msgs.push({\n            payload: 'USP_Insert_Atc_TipChange_Collision',\n            queryParams: [\n                { name: \"RobotID\", value: parts[0] },\n                { name: \"EventType\", value: parts[1] },\n                { name: \"TimeStamp\", value: new Date().toISOString() }\n            ],\n            queryMode: \"execute\"\n        });\n    }\n}\n\nreturn msgs.length > 0 ? [msgs] : null;\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -8114,7 +8327,7 @@
         "type": "function",
         "z": "d2f524c7386c779e",
         "name": "Prepare SP Call",
-        "func": "\nlet data = msg.payload;\n\n\n    // Prepare SQL data\n    let sqlMsg = {\n        payload: \"USP_Insert_Update_Cabin_Cycle\",\n        queryParams: [\n            {   name: \"CabinNo\", value: data.CabinNo },\n            {   name: \"StartDate\", value: data.StartDate },\n            {   name: \"EndDate\", value: data.EndDate },\n            {   name: \"CycleTime\", value: data.CycleTime },\n            {   name: \"TimeStamp\", value:new Date().toISOString() }\n        ],\n        queryMode: \"execute\"\n    };\n\n    return sqlMsg;  // Only return when value changed\n",
+        "func": "let previous = flow.get('previousTags_CT') || {};\nlet data = msg.payload;\n\n// node.warn(data.CabinNo);\n// node.warn(previous.CabinNo);\n  if (data.CabinNo !== previous.CabinNo) {\n  \n  \n \n    // Prepare SQL data\n    let sqlMsg = {\n        payload: \"USP_Insert_Update_Cabin_Cycle\",\n        queryParams: [\n            {   name: \"CabinNo\", value: data.CabinNo },\n            {   name: \"StartDate\", value: data.StartDate },\n            {   name: \"EndDate\", value: data.EndDate },\n            {   name: \"CycleTime\", value: data.CycleTime },\n            {   name: \"TimeStamp\", value:new Date().toISOString() }\n        ],\n        queryMode: \"execute\"\n    };\n    \n }\n\nflow.set('previousTags_CT', data);\n\n   \n return sqlMsg;  // Only return when value changed",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -8125,7 +8338,8 @@
         "y": 160,
         "wires": [
             [
-                "1fbcdd4a705b349d"
+                "1fbcdd4a705b349d",
+                "dcb67c1897af8ee8"
             ]
         ]
     },
@@ -8194,8 +8408,7 @@
         "y": 160,
         "wires": [
             [
-                "5cb5e92877211704",
-                "dcb67c1897af8ee8"
+                "5cb5e92877211704"
             ]
         ]
     },
@@ -8231,7 +8444,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 340,
+        "x": 760,
         "y": 220,
         "wires": []
     },
@@ -8306,7 +8519,7 @@
         "type": "function",
         "z": "1a84d6e3645699d7",
         "name": "Current_Torque_Temp",
-        "func": "msg.payload = {\n    value: msg.payload,\n    timestamp: new Date().toISOString()  // milliseconds since 1970\n};\n\n// let rows = [];\n\n\n// for (let key in msg.payload) {\n//     let now = new Date().toISOString();\n//     rows.push({ TagName: key, Value: String(msg.payload[key]),Timestamp:now });\n// }\n\nmsg.payload = {\n    query: \"EXEC sp_Insert_RbtOverloadHistory @Json\",\n    params: [\n        { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(msg.payload) }\n    ]\n};\nreturn msg;\n",
+        "func": "let previous = flow.get('previousTags_CTT') || {};\nlet current = msg.payload;\nlet changed = [];\nlet ts = new Date().toISOString()\n\n// Detect changed values\nfor (let tag in current) {\n    if (current[tag] !== previous[tag]) {\n        changed.push({\n            name: tag,\n            value: current[tag],\n            timestamp: ts\n        });\n    }\n}\n\n// node.warn(JSON.stringify(changed));\n// Save current values for next time\nflow.set('previousTags_CTT', current);\nif (changed.length > 0) {\n    msg.payload = {\n        query: \"EXEC sp_Insert_RbtOverloadHistory @Json\",\n        params: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(changed) }\n        ]\n    };\n    return msg;\n}\nelse {\n    return null;\n}",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -8444,7 +8657,7 @@
         "type": "function",
         "z": "77b8f05fc0c712f8",
         "name": "function 2",
-        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changed = [];\n\n// Detect changed values\nfor (let tag in current) {\n    if (current[tag] !== previous[tag]) {\n        changed.push({\n            name: tag,\n            value: current[tag]\n        });\n    }\n}\n\n// Save current values for next time\nflow.set('previousTags', current);\n\n\nlet msgs = [];\nif (changed.length > 0) {\n    let now = new Date().toISOString();\n    // let currentDate = now.getFullYear() + '-' +\n    //     String(now.getMonth() + 1).padStart(2, '0') + '-' +\n    //     String(now.getDate()).padStart(2, '0') + ' ' +\n    //     String(now.getHours()).padStart(2, '0') + ':' +\n    //     String(now.getMinutes()).padStart(2, '0') + ':' +\n    //     String(now.getSeconds()).padStart(2, '0');\n\n\n    for (let i = 0; i < changed.length; i++) {\n        let c = changed[i];\n         \n            msgs.push({\n                payload: \"SP_Insert_HourlyProduction\",\n                queryParams: [\n                    { name: \"Name\", value: c.name },\n                    { name: \"Production_Count\", value: c.value },\n                    { name: \"Timestamp\", value: now }\n                ],\n                queryMode: \"execute\"\n            });\n      // console.log(msgs);\n    }\n\n    return [msgs];\n} else {\n    return null;\n}\n",
+        "func": "let previous = flow.get('previousTags_HP') || {};\nlet current = msg.payload;\nlet changed = [];\n\n// Detect changed values\nfor (let tag in current) {\n    if (current[tag] !== previous[tag]) {\n        changed.push({\n            name: tag,\n            value: current[tag]\n        });\n    }\n}\n\n// Save current values for next time\nflow.set('previousTags_HP', current);\n\n\nlet msgs = [];\nif (changed.length > 0) {\n    let now = new Date().toISOString();\n    // let currentDate = now.getFullYear() + '-' +\n    //     String(now.getMonth() + 1).padStart(2, '0') + '-' +\n    //     String(now.getDate()).padStart(2, '0') + ' ' +\n    //     String(now.getHours()).padStart(2, '0') + ':' +\n    //     String(now.getMinutes()).padStart(2, '0') + ':' +\n    //     String(now.getSeconds()).padStart(2, '0');\n\n\n    for (let i = 0; i < changed.length; i++) {\n        let c = changed[i];\n         \n            msgs.push({\n                payload: \"SP_Insert_HourlyProduction\",\n                queryParams: [\n                    { name: \"Name\", value: c.name },\n                    { name: \"Production_Count\", value: c.value },\n                    { name: \"Timestamp\", value: now }\n                ],\n                queryMode: \"execute\"\n            });\n      // console.log(msgs);\n    }\n\n    return [msgs];\n} else {\n    return null;\n}\n",
         "outputs": 1,
         "timeout": "120",
         "noerr": 0,
@@ -8625,7 +8838,7 @@
         "type": "function",
         "z": "9dab2313a2f19c0b",
         "name": "function 4",
-        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changed = [];\n\n// Detect changed values\nfor (let tag in current) {\n    //if (current[tag] !== previous[tag]) {\n        changed.push({\n            name: tag,\n            value: current[tag]\n        });\n   // }\n}\n\n// Save current values for next time\nflow.set('previousTags', current);\n\nlet msgs = [];\nif (changed.length > 0) {\n\n\n    for (let i = 0; i < changed.length; i++) {\n        let c = changed[i];\n         \n            msgs.push({\n                payload: \"SP_Insert_linestatus\",\n                queryParams: [\n                    { name: \"TagName\", value: c.name },\n                    { name: \"Status\", value: c.value },\n                    { name: \"Timestamp\", value: new Date().toISOString() }\n                ],\n                queryMode: \"execute\"\n            });\n       //console.log(msgs);\n    }\n\n    return [msgs];\n} else {\n    return null;\n}\n",
+        "func": "let previous = flow.get('previousTags_LL') || {};\nlet current = msg.payload;\nlet changed = [];\n\n// Detect changed values\nfor (let tag in current) {\n    //if (current[tag] !== previous[tag]) {\n        changed.push({\n            name: tag,\n            value: current[tag]\n        });\n   // }\n}\n\n// Save current values for next time\nflow.set('previousTags_LL', current);\n\nlet msgs = [];\nif (changed.length > 0) {\n\n\n    for (let i = 0; i < changed.length; i++) {\n        let c = changed[i];\n         \n            msgs.push({\n                payload: \"SP_Insert_linestatus\",\n                queryParams: [\n                    { name: \"TagName\", value: c.name },\n                    { name: \"Status\", value: c.value },\n                    { name: \"Timestamp\", value: new Date().toISOString() }\n                ],\n                queryMode: \"execute\"\n            });\n       //console.log(msgs);\n    }\n\n    return [msgs];\n} else {\n    return null;\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8914,7 +9127,7 @@
         "type": "function",
         "z": "047a2ed188a4b718",
         "name": "function 3",
-        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changed = [];\n\n// Detect changes\nfor (let tag in current) {\n    if (current[tag] !== previous[tag]) {\n        changed.push({\n            name: tag,\n            value: current[tag]\n        });\n    }\n}\n\n// Update stored tag states\nflow.set('previousTags', current);\n\nlet msgs = [];\nif (changed.length > 0) {\n    let now = new Date().toISOString();\n    \n\n    for (let i = 0; i < changed.length; i++) {\n        let tag = changed[i];\n       // node.warn(tag.value)\n        msgs.push({\n            payload:  \"sp_RobotHealthStatus\",\n            queryParams: [\n                { name:\"TagName\" , value:tag.name },\n                { name:\"Status\" ,value:tag.value},\n                { name:\"TimeStamp\",value:now}\n               \n            ],\n            queryMode: \"execute\"\n        });\n    }\n\n    return [msgs];\n} else {\n    return null;\n}\n",
+        "func": "let previous = flow.get('previousTags_RH') || {};\nlet current = msg.payload;\nlet changed = [];\n\n// Detect changes\nfor (let tag in current) {\n    if (current[tag] !== previous[tag]) {\n        changed.push({\n            name: tag,\n            value: current[tag]\n        });\n    }\n}\n\n// Update stored tag states\nflow.set('previousTags_RH', current);\n\nlet msgs = [];\nif (changed.length > 0) {\n    let now = new Date().toISOString();\n    \n\n    for (let i = 0; i < changed.length; i++) {\n        let tag = changed[i];\n       // node.warn(tag.value)\n        msgs.push({\n            payload:  \"sp_RobotHealthStatus\",\n            queryParams: [\n                { name:\"TagName\" , value:tag.name },\n                { name:\"Status\" ,value:tag.value},\n                { name:\"TimeStamp\",value:now}\n               \n            ],\n            queryMode: \"execute\"\n        });\n    }\n\n    return [msgs];\n} else {\n    return null;\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -9470,7 +9683,7 @@
         "type": "function",
         "z": "69c80b9824af6584",
         "name": "function ML10",
-        "func": "let data = msg.payload;\n\nlet rows = [];\n\n// ========== ML10 ========== //\n\nconst tags = [\"ML10_1_G1\", \"ML10_2_G1\", \"ML10_3_G1\", \"ML10_4_G1\"];\ntags.forEach(tag => pushTagRow(tag, data.ML10));\n\n// Helper function to push rows with Target and Actual\nfunction pushTagRow(tagBase, Cabinno) {\n    rows.push({\n        TagName: tagBase,\n        CabinNo: Cabinno,\n        Target: String(data[`${tagBase}_Target`]),\n        Actual: String(data[`${tagBase}_Actual`]),\n        TimeStamp:new Date().toISOString()\n    });\n}\n\n// node.warn(JSON.stringify(rows));\n\n// If any rows to insert\nif (rows.length > 0) {\n\n    let Sqlmsg = {\n        payload: \"EXEC sp_InsertSpotCount @Json\",\n        queryParams: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows)  } ],\n        queryMode: \"execute\"\n    };\n    \n    // msg.payload = {\n    //     query: \"EXEC sp_InsertSpotCount @Json\",\n    //     params: [\n    //         { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n    //     ]\n    // };\n    return Sqlmsg;\n} else {\n    return null;  // No change\n}\n",
+        "func": "let previous = flow.get('previousTags_SCML10') || {};\nlet data = msg.payload;\n\nlet rows = [];\n\nif (data.ML10 !== previous.ML10) {\n\n// ========== ML10 ========== //\n\nconst tags = [\"ML10_1_G1\", \"ML10_2_G1\", \"ML10_3_G1\", \"ML10_4_G1\"];\ntags.forEach(tag => pushTagRow(tag, data.ML10));\n\n// Helper function to push rows with Target and Actual\nfunction pushTagRow(tagBase, Cabinno) {\n    rows.push({\n        TagName: tagBase,\n        CabinNo: Cabinno,\n        Target: String(data[`${tagBase}_Target`]),\n        Actual: String(data[`${tagBase}_Actual`]),\n        TimeStamp:new Date().toISOString()\n    });\n}\n\n// node.warn(JSON.stringify(rows));\n}\n\nflow.set('previousTags_SCML10', data);\n\n// If any rows to insert\nif (rows.length > 0) {\n\n    let Sqlmsg = {\n        payload: \"EXEC sp_InsertSpotCount @Json\",\n        queryParams: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows)  } ],\n        queryMode: \"execute\"\n    };\n    \n    // msg.payload = {\n    //     query: \"EXEC sp_InsertSpotCount @Json\",\n    //     params: [\n    //         { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n    //     ]\n    // };\n    return Sqlmsg;\n} else {\n    return null;  // No change\n}\n\n\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -9648,7 +9861,7 @@
         "type": "function",
         "z": "69c80b9824af6584",
         "name": "function ML20",
-        "func": "let data = msg.payload;\n\nlet rows = [];\n\n// ========== ML20 ========== //\nconst tags = [\"ML20_5_G1\", \"ML20_6_G1\", \"ML20_7_G1\", \"ML20_7_G2\", \"ML20_7_G3\", \"ML20_8_G1\", \"ML20_8_G2\", \"ML20_8_G3\"];\ntags.forEach(tag => pushTagRow(tag, data.ML20)); \n\n\n// Helper function to push rows with Target and Actual\nfunction pushTagRow(tagBase, Cabinno) {\n    rows.push({\n        TagName: tagBase,\n        CabinNo: Cabinno,\n        Target: String(data[`${tagBase}_Target`]),\n        Actual: String(data[`${tagBase}_Actual`]),\n        TimeStamp:new Date().toISOString()\n    });\n}\n\n// node.warn(JSON.stringify(rows));\n\n// If any rows to insert\nif (rows.length > 0) {\n\n    let Sqlmsg = {\n        payload: \"EXEC sp_InsertSpotCount @Json\",\n        queryParams: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows)  } ],\n        queryMode: \"execute\"\n    };\n    \n    return Sqlmsg;\n} else {\n    return null;  // No change\n}\n",
+        "func": "let previous = flow.get('previousTags_SCML20') || {};\nlet data = msg.payload;\n\nlet rows = [];\n\n  if (data.ML20 !== previous.ML20) {\n\n// ========== ML20 ========== //\nconst tags = [\"ML20_5_G1\", \"ML20_6_G1\", \"ML20_7_G1\", \"ML20_7_G2\", \"ML20_7_G3\", \"ML20_8_G1\", \"ML20_8_G2\", \"ML20_8_G3\"];\ntags.forEach(tag => pushTagRow(tag, data.ML20)); \n\n\n// Helper function to push rows with Target and Actual\nfunction pushTagRow(tagBase, Cabinno) {\n    rows.push({\n        TagName: tagBase,\n        CabinNo: Cabinno,\n        Target: String(data[`${tagBase}_Target`]),\n        Actual: String(data[`${tagBase}_Actual`]),\n        TimeStamp:new Date().toISOString()\n    });\n}\n}\n\nflow.set('previousTags_SCML20', data);\n\n// If any rows to insert\nif (rows.length > 0) {\n\n    let Sqlmsg = {\n        payload: \"EXEC sp_InsertSpotCount @Json\",\n        queryParams: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows)  } ],\n        queryMode: \"execute\"\n    };\n    \n    return Sqlmsg;\n} else {\n    return null;  // No change\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -9688,7 +9901,7 @@
         "type": "function",
         "z": "69c80b9824af6584",
         "name": "function ML40",
-        "func": "let data = msg.payload;\n\nlet rows = [];\n\n// ========== ML40 ========== //\nconst tags = [\"ML40_11_G1\", \"ML40_12_G1\", \"ML40_13_G1\", \"ML40_14_G1\"];\ntags.forEach(tag => pushTagRow(tag, data.ML40));\n\n\n// Helper function to push rows with Target and Actual\nfunction pushTagRow(tagBase, Cabinno) {\n    rows.push({\n        TagName: tagBase,\n        CabinNo: Cabinno,\n        Target: String(data[`${tagBase}_Target`]),\n        Actual: String(data[`${tagBase}_Actual`]),\n        TimeStamp:new Date().toISOString()\n    });\n}\n\n// node.warn(JSON.stringify(rows));\n\n// If any rows to insert\nif (rows.length > 0) {\n\n    let Sqlmsg = {\n        payload: \"EXEC sp_InsertSpotCount @Json\",\n        queryParams: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows)  } ],\n        queryMode: \"execute\"\n    };\n    \n    // msg.payload = {\n    //     query: \"EXEC sp_InsertSpotCount @Json\",\n    //     params: [\n    //         { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n    //     ]\n    // };\n    return Sqlmsg;\n} else {\n    return null;  // No change\n}\n",
+        "func": "let previous = flow.get('previousTags_SCML40') || {};\nlet data = msg.payload;\n\nlet rows = [];\n\nif (data.ML40 !== previous.ML40) {\n// ========== ML40 ========== //\nconst tags = [\"ML40_11_G1\", \"ML40_12_G1\", \"ML40_13_G1\", \"ML40_14_G1\"];\ntags.forEach(tag => pushTagRow(tag, data.ML40));\n\n\n// Helper function to push rows with Target and Actual\nfunction pushTagRow(tagBase, Cabinno) {\n    rows.push({\n        TagName: tagBase,\n        CabinNo: Cabinno,\n        Target: String(data[`${tagBase}_Target`]),\n        Actual: String(data[`${tagBase}_Actual`]),\n        TimeStamp:new Date().toISOString()\n    });\n}\n\n}\n\nflow.set('previousTags_SCML40', data);\n\n// If any rows to insert\nif (rows.length > 0) {\n\n    let Sqlmsg = {\n        payload: \"EXEC sp_InsertSpotCount @Json\",\n        queryParams: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows)  } ],\n        queryMode: \"execute\"\n    };\n    \n    // msg.payload = {\n    //     query: \"EXEC sp_InsertSpotCount @Json\",\n    //     params: [\n    //         { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n    //     ]\n    // };\n    return Sqlmsg;\n} else {\n    return null;  // No change\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -9708,7 +9921,7 @@
         "type": "function",
         "z": "69c80b9824af6584",
         "name": "function ML30",
-        "func": "let data = msg.payload;\n\nlet rows = [];\n\n// ========== ML30 ========== //\n\nconst tags = [\"ML30_9_G1\", \"ML30_10_G1\"];\ntags.forEach(tag => pushTagRow(tag, data.ML30));\n\n// Helper function to push rows with Target and Actual\nfunction pushTagRow(tagBase, Cabinno) {\n    rows.push({\n        TagName: tagBase,\n        CabinNo: Cabinno,\n        Target: String(data[`${tagBase}_Target`]),\n        Actual: String(data[`${tagBase}_Actual`]),\n        TimeStamp:new Date().toISOString()\n    });\n}\n\n// node.warn(JSON.stringify(rows));\n\n// If any rows to insert\nif (rows.length > 0) {\n\n    let Sqlmsg = {\n        payload: \"EXEC sp_InsertSpotCount @Json\",\n        queryParams: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows)  } ],\n        queryMode: \"execute\"\n    };\n    \n    // msg.payload = {\n    //     query: \"EXEC sp_InsertSpotCount @Json\",\n    //     params: [\n    //         { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n    //     ]\n    // };\n    return Sqlmsg;\n} else {\n    return null;  // No change\n}\n",
+        "func": "let previous = flow.get('previousTags_SCML30') || {};\n\nlet data = msg.payload;\n\nlet rows = [];\n\nif (data.ML30 !== previous.ML30) {\n// ========== ML30 ========== //\n\nconst tags = [\"ML30_9_G1\", \"ML30_10_G1\"];\ntags.forEach(tag => pushTagRow(tag, data.ML30));\n\n// Helper function to push rows with Target and Actual\nfunction pushTagRow(tagBase, Cabinno) {\n    rows.push({\n        TagName: tagBase,\n        CabinNo: Cabinno,\n        Target: String(data[`${tagBase}_Target`]),\n        Actual: String(data[`${tagBase}_Actual`]),\n        TimeStamp:new Date().toISOString()\n    });\n}\n\n}\nflow.set('previousTags_SCML30', data);\n\n// If any rows to insert\nif (rows.length > 0) {\n\n    let Sqlmsg = {\n        payload: \"EXEC sp_InsertSpotCount @Json\",\n        queryParams: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows)  } ],\n        queryMode: \"execute\"\n    };\n    \n    // msg.payload = {\n    //     query: \"EXEC sp_InsertSpotCount @Json\",\n    //     params: [\n    //         { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(rows) }\n    //     ]\n    // };\n    return Sqlmsg;\n} else {\n    return null;  // No change\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -9939,7 +10152,7 @@
         "type": "function",
         "z": "b225c926a1394a08",
         "name": "Filter TRUE tags and prepare SQL",
-        "func": "let previous = flow.get('previousTags') || {};\nlet current = msg.payload;\nlet changedValue = [];\n\n// Detect tags changed from false (or undefined) to true\nfor (let tag in current) {\n    \n    if (current[tag] !== previous[tag]) {\n        changedValue.push({\n            name:tag,\n            val:current[tag]\n        });\n        \n    }\n}\n\n// Update stored state\nflow.set('previousTags', current);\n\nlet msgs = [];\n\nfor (let i = 0; i < changedValue.length; i++) {\n   \n        msgs.push({\n            payload: 'SP_Insert_TipChangeCount',\n            queryParams: [\n                { name: \"Name\", value: changedValue[i].name },\n                { name: \"Value\", value: changedValue[i].val },\n                 { name: \"TimeStamp\", value: new Date().toISOString() }\n            ],\n            queryMode: \"execute\"\n        });\n  \n}\n\nreturn msgs.length > 0 ? [msgs] : null;\n",
+        "func": "let previous = flow.get('previousTags_TC') || {};\nlet current = msg.payload;\nlet changedValue = [];\n\n// Detect tags changed from false (or undefined) to true\nfor (let tag in current) {\n    \n    if (current[tag] !== previous[tag]) {\n        changedValue.push({\n            name:tag,\n            val:current[tag]\n        });\n        \n    }\n}\n\n// Update stored state\nflow.set('previousTags_TC', current);\n\nlet msgs = [];\n\nfor (let i = 0; i < changedValue.length; i++) {\n   \n        msgs.push({\n            payload: 'SP_Insert_TipChangeCount',\n            queryParams: [\n                { name: \"Name\", value: changedValue[i].name },\n                { name: \"Value\", value: changedValue[i].val },\n                 { name: \"TimeStamp\", value: new Date().toISOString() }\n            ],\n            queryMode: \"execute\"\n        });\n  \n}\n\nreturn msgs.length > 0 ? [msgs] : null;\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
