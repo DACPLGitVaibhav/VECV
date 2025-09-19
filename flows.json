@@ -142,201 +142,457 @@
         "connmode": "rack-slot",
         "adapter": "",
         "busaddr": 2,
-        "cycletime": "5000",
+        "cycletime": "500",
         "timeout": 2000,
         "name": "Main_PLC",
         "vartable": [
             {
-                "addr": "DB428,I0",
-                "name": "01_RH"
+                "addr": "DB471,I2",
+                "name": "01_Curr_Axis1"
             },
             {
-                "addr": "DB428,I2",
-                "name": "02_RH"
+                "addr": "DB471,I4",
+                "name": "01_Curr_Axis2"
             },
             {
-                "addr": "DB428,I4",
-                "name": "03_RH"
+                "addr": "DB471,I6",
+                "name": "01_Curr_Axis3"
             },
             {
-                "addr": "DB428,I6",
-                "name": "04_RH"
+                "addr": "DB471,I8",
+                "name": "01_Curr_Axis4"
             },
             {
-                "addr": "DB428,I8",
-                "name": "05_RH"
+                "addr": "DB471,I10",
+                "name": "01_Curr_Axis5"
             },
             {
-                "addr": "DB428,I10",
-                "name": "06_RH"
+                "addr": "DB471,I12",
+                "name": "01_Curr_Axis6"
             },
             {
-                "addr": "DB428,I12",
-                "name": "07_RH"
+                "addr": "DB471,I14",
+                "name": "01_Curr_Axis7"
             },
             {
-                "addr": "DB428,I14",
-                "name": "08_RH"
+                "addr": "DB471,I16",
+                "name": "01_Curr_Axis8"
             },
             {
-                "addr": "DB428,I16",
-                "name": "09_RH"
+                "addr": "DB472,I2",
+                "name": "02_Curr_Axis1"
             },
             {
-                "addr": "DB428,I18",
-                "name": "10_RH"
+                "addr": "DB472,I4",
+                "name": "02_Curr_Axis2"
             },
             {
-                "addr": "DB428,I20",
-                "name": "11_RH"
+                "addr": "DB472,I6",
+                "name": "02_Curr_Axis3"
             },
             {
-                "addr": "DB428,I22",
-                "name": "12_RH"
+                "addr": "DB472,I8",
+                "name": "02_Curr_Axis4"
             },
             {
-                "addr": "DB428,I24",
-                "name": "13_RH"
+                "addr": "DB472,I10",
+                "name": "02_Curr_Axis5"
             },
             {
-                "addr": "DB428,I26",
-                "name": "14_RH"
+                "addr": "DB472,I12",
+                "name": "02_Curr_Axis6"
             },
             {
-                "addr": "DB428,I28",
-                "name": "15_RH"
+                "addr": "DB472,I14",
+                "name": "02_Curr_Axis7"
             },
             {
-                "addr": "DB428,I30",
-                "name": "16_RH"
+                "addr": "DB472,I16",
+                "name": "02_Curr_Axis8"
             },
             {
-                "addr": "DB428,I32",
-                "name": "17_RH"
+                "addr": "DB473,I2",
+                "name": "03_Curr_Axis1"
             },
             {
-                "addr": "DB428,I34",
-                "name": "18_RH"
+                "addr": "DB473,I4",
+                "name": "03_Curr_Axis2"
             },
             {
-                "addr": "DB428,I36",
-                "name": "19_RH"
+                "addr": "DB473,I6",
+                "name": "03_Curr_Axis3"
             },
             {
-                "addr": "DB428,I38",
-                "name": "20_RH"
+                "addr": "DB473,I8",
+                "name": "03_Curr_Axis4"
             },
             {
-                "addr": "DB428,I40",
-                "name": "21_RH"
+                "addr": "DB473,I10",
+                "name": "03_Curr_Axis5"
             },
             {
-                "addr": "DB428,I42",
-                "name": "22_RH"
+                "addr": "DB473,I12",
+                "name": "03_Curr_Axis6"
             },
             {
-                "addr": "DB428,I44",
-                "name": "23_RH"
+                "addr": "DB473,I14",
+                "name": "03_Curr_Axis7"
             },
             {
-                "addr": "DB428,I46",
-                "name": "24_RH"
+                "addr": "DB473,I16",
+                "name": "03_Curr_Axis8"
             },
             {
-                "addr": "DB428,I60",
-                "name": "01_LH"
+                "addr": "DB470,I2",
+                "name": "04_Curr_Axis1"
             },
             {
-                "addr": "DB428,I62",
-                "name": "02_LH"
+                "addr": "DB470,I4",
+                "name": "04_Curr_Axis2"
             },
             {
-                "addr": "DB428,I64",
-                "name": "03_LH"
+                "addr": "DB470,I6",
+                "name": "04_Curr_Axis3"
             },
             {
-                "addr": "DB428,I66",
-                "name": "04_LH"
+                "addr": "DB470,I8",
+                "name": "04_Curr_Axis4"
             },
             {
-                "addr": "DB428,I68",
-                "name": "05_LH"
+                "addr": "DB470,I10",
+                "name": "04_Curr_Axis5"
             },
             {
-                "addr": "DB428,I70",
-                "name": "06_LH"
+                "addr": "DB470,I12",
+                "name": "04_Curr_Axis6"
             },
             {
-                "addr": "DB428,I72",
-                "name": "07_LH"
+                "addr": "DB470,I14",
+                "name": "04_Curr_Axis7"
             },
             {
-                "addr": "DB428,I74",
-                "name": "08_LH"
+                "addr": "DB470,I16",
+                "name": "04_Curr_Axis8"
             },
             {
-                "addr": "DB428,I76",
-                "name": "09_LH"
+                "addr": "DB480,I2",
+                "name": "05_Curr_Axis1"
             },
             {
-                "addr": "DB428,I78",
-                "name": "10_LH"
+                "addr": "DB480,I4",
+                "name": "05_Curr_Axis2"
             },
             {
-                "addr": "DB428,I80",
-                "name": "11_LH"
+                "addr": "DB480,I6",
+                "name": "05_Curr_Axis3"
             },
             {
-                "addr": "DB428,I82",
-                "name": "12_LH"
+                "addr": "DB480,I8",
+                "name": "05_Curr_Axis4"
             },
             {
-                "addr": "DB428,I84",
-                "name": "13_LH"
+                "addr": "DB480,I10",
+                "name": "05_Curr_Axis5"
             },
             {
-                "addr": "DB428,I86",
-                "name": "14_LH"
+                "addr": "DB480,I12",
+                "name": "05_Curr_Axis6"
             },
             {
-                "addr": "DB428,I88",
-                "name": "15_LH"
+                "addr": "DB480,I14",
+                "name": "05_Curr_Axis7"
             },
             {
-                "addr": "DB428,I90",
-                "name": "16_LH"
+                "addr": "DB480,I16",
+                "name": "05_Curr_Axis8"
             },
             {
-                "addr": "DB428,I92",
-                "name": "17_LH"
+                "addr": "DB484,I2",
+                "name": "06_Curr_Axis1"
             },
             {
-                "addr": "DB428,I94",
-                "name": "18_LH"
+                "addr": "DB484,I4",
+                "name": "06_Curr_Axis2"
             },
             {
-                "addr": "DB428,I96",
-                "name": "19_LH"
+                "addr": "DB484,I6",
+                "name": "06_Curr_Axis3"
             },
             {
-                "addr": "DB428,I98",
-                "name": "20_LH"
+                "addr": "DB484,I8",
+                "name": "06_Curr_Axis4"
             },
             {
-                "addr": "DB428,I100",
-                "name": "21_LH"
+                "addr": "DB484,I10",
+                "name": "06_Curr_Axis5"
             },
             {
-                "addr": "DB428,I102",
-                "name": "22_LH"
+                "addr": "DB484,I12",
+                "name": "06_Curr_Axis6"
             },
             {
-                "addr": "DB428,I104",
-                "name": "23_LH"
+                "addr": "DB484,I14",
+                "name": "06_Curr_Axis7"
             },
             {
-                "addr": "DB428,I106",
-                "name": "24_LH"
+                "addr": "DB484,I16",
+                "name": "06_Curr_Axis8"
+            },
+            {
+                "addr": "DB489,I2",
+                "name": "07_Curr_Axis1"
+            },
+            {
+                "addr": "DB489,I4",
+                "name": "07_Curr_Axis2"
+            },
+            {
+                "addr": "DB489,I6",
+                "name": "07_Curr_Axis3"
+            },
+            {
+                "addr": "DB489,I8",
+                "name": "07_Curr_Axis4"
+            },
+            {
+                "addr": "DB489,I10",
+                "name": "07_Curr_Axis5"
+            },
+            {
+                "addr": "DB489,I12",
+                "name": "07_Curr_Axis6"
+            },
+            {
+                "addr": "DB489,I14",
+                "name": "07_Curr_Axis7"
+            },
+            {
+                "addr": "DB489,I16",
+                "name": "07_Curr_Axis8"
+            },
+            {
+                "addr": "DB490,I2",
+                "name": "08_Curr_Axis1"
+            },
+            {
+                "addr": "DB490,I4",
+                "name": "08_Curr_Axis2"
+            },
+            {
+                "addr": "DB490,I6",
+                "name": "08_Curr_Axis3"
+            },
+            {
+                "addr": "DB490,I8",
+                "name": "08_Curr_Axis4"
+            },
+            {
+                "addr": "DB490,I10",
+                "name": "08_Curr_Axis5"
+            },
+            {
+                "addr": "DB490,I12",
+                "name": "08_Curr_Axis6"
+            },
+            {
+                "addr": "DB490,I14",
+                "name": "08_Curr_Axis7"
+            },
+            {
+                "addr": "DB490,I16",
+                "name": "08_Curr_Axis8"
+            },
+            {
+                "addr": "DB491,I2",
+                "name": "09_Curr_Axis1"
+            },
+            {
+                "addr": "DB491,I4",
+                "name": "09_Curr_Axis2"
+            },
+            {
+                "addr": "DB491,I6",
+                "name": "09_Curr_Axis3"
+            },
+            {
+                "addr": "DB491,I8",
+                "name": "09_Curr_Axis4"
+            },
+            {
+                "addr": "DB491,I10",
+                "name": "09_Curr_Axis5"
+            },
+            {
+                "addr": "DB491,I12",
+                "name": "09_Curr_Axis6"
+            },
+            {
+                "addr": "DB491,I14",
+                "name": "09_Curr_Axis7"
+            },
+            {
+                "addr": "DB491,I16",
+                "name": "09_Curr_Axis8"
+            },
+            {
+                "addr": "DB492,I2",
+                "name": "10_Curr_Axis1"
+            },
+            {
+                "addr": "DB492,I4",
+                "name": "10_Curr_Axis2"
+            },
+            {
+                "addr": "DB492,I6",
+                "name": "10_Curr_Axis3"
+            },
+            {
+                "addr": "DB492,I8",
+                "name": "10_Curr_Axis4"
+            },
+            {
+                "addr": "DB492,I10",
+                "name": "10_Curr_Axis5"
+            },
+            {
+                "addr": "DB492,I12",
+                "name": "10_Curr_Axis6"
+            },
+            {
+                "addr": "DB492,I14",
+                "name": "10_Curr_Axis7"
+            },
+            {
+                "addr": "DB492,I16",
+                "name": "10_Curr_Axis8"
+            },
+            {
+                "addr": "DB493,I2",
+                "name": "11_Curr_Axis1"
+            },
+            {
+                "addr": "DB493,I4",
+                "name": "11_Curr_Axis2"
+            },
+            {
+                "addr": "DB493,I6",
+                "name": "11_Curr_Axis3"
+            },
+            {
+                "addr": "DB493,I8",
+                "name": "11_Curr_Axis4"
+            },
+            {
+                "addr": "DB493,I10",
+                "name": "11_Curr_Axis5"
+            },
+            {
+                "addr": "DB493,I12",
+                "name": "11_Curr_Axis6"
+            },
+            {
+                "addr": "DB493,I14",
+                "name": "11_Curr_Axis7"
+            },
+            {
+                "addr": "DB493,I16",
+                "name": "11_Curr_Axis8"
+            },
+            {
+                "addr": "DB494,I2",
+                "name": "12_Curr_Axis1"
+            },
+            {
+                "addr": "DB494,I4",
+                "name": "12_Curr_Axis2"
+            },
+            {
+                "addr": "DB494,I6",
+                "name": "12_Curr_Axis3"
+            },
+            {
+                "addr": "DB494,I8",
+                "name": "12_Curr_Axis4"
+            },
+            {
+                "addr": "DB494,I10",
+                "name": "12_Curr_Axis5"
+            },
+            {
+                "addr": "DB494,I12",
+                "name": "12_Curr_Axis6"
+            },
+            {
+                "addr": "DB494,I14",
+                "name": "12_Curr_Axis7"
+            },
+            {
+                "addr": "DB494,I16",
+                "name": "12_Curr_Axis8"
+            },
+            {
+                "addr": "DB495,I2",
+                "name": "13_Curr_Axis1"
+            },
+            {
+                "addr": "DB495,I4",
+                "name": "13_Curr_Axis2"
+            },
+            {
+                "addr": "DB495,I6",
+                "name": "13_Curr_Axis3"
+            },
+            {
+                "addr": "DB495,I8",
+                "name": "13_Curr_Axis4"
+            },
+            {
+                "addr": "DB495,I10",
+                "name": "13_Curr_Axis5"
+            },
+            {
+                "addr": "DB495,I12",
+                "name": "13_Curr_Axis6"
+            },
+            {
+                "addr": "DB495,I14",
+                "name": "13_Curr_Axis7"
+            },
+            {
+                "addr": "DB495,I16",
+                "name": "13_Curr_Axis8"
+            },
+            {
+                "addr": "DB497,I2",
+                "name": "14_Curr_Axis1"
+            },
+            {
+                "addr": "DB497,I4",
+                "name": "14_Curr_Axis2"
+            },
+            {
+                "addr": "DB497,I6",
+                "name": "14_Curr_Axis3"
+            },
+            {
+                "addr": "DB497,I8",
+                "name": "14_Curr_Axis4"
+            },
+            {
+                "addr": "DB497,I10",
+                "name": "14_Curr_Axis5"
+            },
+            {
+                "addr": "DB497,I12",
+                "name": "14_Curr_Axis6"
+            },
+            {
+                "addr": "DB497,I14",
+                "name": "14_Curr_Axis7"
+            },
+            {
+                "addr": "DB497,I16",
+                "name": "14_Curr_Axis8"
             }
         ]
     },
@@ -4636,7 +4892,7 @@
         "connmode": "rack-slot",
         "adapter": "",
         "busaddr": "",
-        "cycletime": "5000",
+        "cycletime": "500",
         "timeout": 1500,
         "name": "Current Torqe Temp",
         "vartable": [
@@ -7414,7 +7670,9 @@
         "x": 150,
         "y": 180,
         "wires": [
-            []
+            [
+                "7c183a83250c3342"
+            ]
         ]
     },
     {
@@ -7430,7 +7688,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 620,
-        "y": 180,
+        "y": 300,
         "wires": []
     },
     {
@@ -7438,7 +7696,7 @@
         "type": "function",
         "z": "928a659e27e15d3b",
         "name": "function 1",
-        "func": "// Store data in flow context\nflow.set(\"myData\", { name: \"John\", age: 30 });\n\n// Retrieve data from flow context\nlet myData = flow.get(\"myData\");\nnode.warn(myData); // Output will be { name: \"John\", age: 30 } after a restart",
+        "func": "return msg;",
         "outputs": 1,
         "timeout": "120",
         "noerr": 0,
@@ -7449,7 +7707,7 @@
         "y": 180,
         "wires": [
             [
-                "d9bde5195b941785"
+                "0bba34e65b3fb573"
             ]
         ]
     },
@@ -7467,9 +7725,24 @@
         "x": 130,
         "y": 100,
         "wires": [
-            [
-                "7c183a83250c3342"
-            ]
+            []
+        ]
+    },
+    {
+        "id": "0bba34e65b3fb573",
+        "type": "file",
+        "z": "928a659e27e15d3b",
+        "name": "",
+        "filename": "D:\\JBM\\Log\\CheckCurr.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 590,
+        "y": 140,
+        "wires": [
+            []
         ]
     },
     {
@@ -8504,7 +8777,7 @@
         "endpoint": "s7-ep",
         "mode": "all",
         "variable": "",
-        "diff": false,
+        "diff": true,
         "name": "S7",
         "x": 130,
         "y": 100,
@@ -8519,7 +8792,7 @@
         "type": "function",
         "z": "1a84d6e3645699d7",
         "name": "Current_Torque_Temp",
-        "func": "let previous = flow.get('previousTags_CTT') || {};\nlet current = msg.payload;\nlet changed = [];\nlet ts = new Date().toISOString()\n\n// Detect changed values\nfor (let tag in current) {\n    if (current[tag] !== previous[tag]) {\n        changed.push({\n            name: tag,\n            value: current[tag],\n            timestamp: ts\n        });\n    }\n}\n\n// node.warn(JSON.stringify(changed));\n// Save current values for next time\nflow.set('previousTags_CTT', current);\nif (changed.length > 0) {\n    msg.payload = {\n        query: \"EXEC sp_Insert_RbtOverloadHistory @Json\",\n        params: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(changed) }\n        ]\n    };\n    return msg;\n}\nelse {\n    return null;\n}",
+        "func": "\nlet previous = flow.get('previousTags_CTT') || {};\nlet current = msg.payload;\nlet changed = [];\nlet ts = new Date().toISOString()\n\n// Detect changed values\nfor (let tag in current) {\n    if (current[tag] !== previous[tag]) {\n        changed.push({\n            name: tag,\n            value: current[tag],\n            timestamp: ts\n        });\n    }\n}\n\n// node.warn(JSON.stringify(changed));\n// Save current values for next time\nflow.set('previousTags_CTT', current);\nif (changed.length > 0) {\n    msg.payload = {\n        query: \"EXEC sp_Insert_RbtOverloadHistory @Json\",\n        params: [\n            { name: \"Json\", type: \"nvarchar(max)\", value: JSON.stringify(changed) }\n        ]\n    };\n    return msg;\n}\nelse {\n    return null;\n}",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -8544,14 +8817,14 @@
                 "p": "payload"
             }
         ],
-        "repeat": "5",
+        "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": "",
         "topic": "",
-        "payload": "{\"01_Curr_Axis1\":123,\"01_Torq_Axis1\":987,\"01_Temp_Axis1\":32,\"01_Curr_Axis2\":124,\"01_Torq_Axis2\":988,\"01_Temp_Axis2\":33,\"01_Curr_Axis3\":125,\"01_Torq_Axis3\":989,\"01_Temp_Axis3\":34,\"01_Curr_Axis4\":126,\"01_Torq_Axis4\":990,\"01_Temp_Axis4\":35,\"01_Curr_Axis5\":127,\"01_Torq_Axis5\":991,\"01_Temp_Axis5\":36,\"01_Curr_Axis6\":128,\"01_Torq_Axis6\":992,\"01_Temp_Axis6\":37,\"01_Curr_Axis7\":129,\"01_Torq_Axis7\":993,\"01_Temp_Axis7\":38,\"01_Curr_Axis8\":130,\"01_Torq_Axis8\":994,\"01_Temp_Axis8\":39,\"02_Curr_Axis1\":11,\"02_Torq_Axis1\":11,\"02_Temp_Axis1\":11,\"02_Curr_Axis2\":11,\"02_Torq_Axis2\":11,\"02_Temp_Axis2\":11,\"02_Curr_Axis3\":11,\"02_Torq_Axis3\":11,\"02_Temp_Axis3\":11,\"02_Curr_Axis4\":11,\"02_Torq_Axis4\":11,\"02_Temp_Axis4\":11,\"02_Curr_Axis5\":11,\"02_Torq_Axis5\":11,\"02_Temp_Axis5\":11,\"02_Curr_Axis6\":11,\"02_Torq_Axis6\":11,\"02_Temp_Axis6\":11,\"02_Curr_Axis7\":11,\"02_Torq_Axis7\":11,\"02_Temp_Axis7\":11,\"02_Curr_Axis8\":11,\"02_Torq_Axis8\":11,\"02_Temp_Axis8\":11,\"03_Curr_Axis1\":12,\"03_Torq_Axis1\":12,\"03_Temp_Axis1\":12,\"03_Curr_Axis2\":12,\"03_Torq_Axis2\":12,\"03_Temp_Axis2\":12,\"03_Curr_Axis3\":12,\"03_Torq_Axis3\":12,\"03_Temp_Axis3\":12,\"03_Curr_Axis4\":12,\"03_Torq_Axis4\":12,\"03_Temp_Axis4\":12,\"03_Curr_Axis5\":12,\"03_Torq_Axis5\":12,\"03_Temp_Axis5\":12,\"03_Curr_Axis6\":12,\"03_Torq_Axis6\":12,\"03_Temp_Axis6\":12,\"03_Curr_Axis7\":12,\"03_Torq_Axis7\":12,\"03_Temp_Axis7\":12,\"03_Curr_Axis8\":12,\"03_Torq_Axis8\":12,\"03_Temp_Axis8\":12}",
+        "payload": "{\"02_Torq_Axis1\":4096}",
         "payloadType": "json",
-        "x": 110,
+        "x": 100,
         "y": 40,
         "wires": [
             []
@@ -8631,6 +8904,29 @@
         "params": [],
         "x": 600,
         "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "32d6c8617e87c0d3",
+        "type": "inject",
+        "z": "1a84d6e3645699d7",
+        "name": "Inject Cabin Data",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "{\"01_Curr_Axis1\":124}",
+        "payloadType": "json",
+        "x": 100,
+        "y": 160,
         "wires": [
             []
         ]
@@ -9127,7 +9423,7 @@
         "type": "function",
         "z": "047a2ed188a4b718",
         "name": "function 3",
-        "func": "let previous = flow.get('previousTags_RH') || {};\nlet current = msg.payload;\nlet changed = [];\n\n// Detect changes\nfor (let tag in current) {\n    if (current[tag] !== previous[tag]) {\n        changed.push({\n            name: tag,\n            value: current[tag]\n        });\n    }\n}\n\n// Update stored tag states\nflow.set('previousTags_RH', current);\n\nlet msgs = [];\nif (changed.length > 0) {\n    let now = new Date().toISOString();\n    \n\n    for (let i = 0; i < changed.length; i++) {\n        let tag = changed[i];\n       // node.warn(tag.value)\n        msgs.push({\n            payload:  \"sp_RobotHealthStatus\",\n            queryParams: [\n                { name:\"TagName\" , value:tag.name },\n                { name:\"Status\" ,value:tag.value},\n                { name:\"TimeStamp\",value:now}\n               \n            ],\n            queryMode: \"execute\"\n        });\n    }\n\n    return [msgs];\n} else {\n    return null;\n}\n",
+        "func": "let previous = flow.get('previousTags_RH') || {};\nlet current = msg.payload;\nlet changed = [];\n\n// Detect changes\nfor (let tag in current) {\n    if (current[tag] !== previous[tag]) {\n        changed.push({\n            name: tag,\n            value: current[tag]\n        });\n    }\n}\n\n// Update stored tag states\nflow.set('previousTags_RH', current);\n\nnode.warn(changed.length);\n\nlet msgs = [];\nif (changed.length > 0) {\n    let now = new Date().toISOString();\n    \n\n    for (let i = 0; i < changed.length; i++) {\n        let tag = changed[i];\n       // node.warn(tag.value)\n        node.send({\n            payload:  \"sp_RobotHealthStatus\",\n            queryParams: [\n                { name:\"TagName\" , value:tag.name },\n                { name:\"Status\" ,value:tag.value},\n                { name:\"TimeStamp\",value:now}\n               \n            ],\n            queryMode: \"execute\"\n        });\n    }\n\n   \n    // return [msgs];\n    return null;\n} else {\n    return null;\n}\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -9252,9 +9548,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"ML10_1_Battery\":true}",
+        "payload": "{\"ML10_1_Active\":false,\"ML10_2_Active\":false,\"ML10_3_Active\":false,\"ML10_4_Active\":false,\"ML20_5_Active\":false,\"ML20_6_Active\":false,\"ML20_7_Active\":false,\"ML20_8_Active\":false,\"ML30_9_Active\":true,\"ML30_10_Active\":true,\"ML30_11_Active\":true,\"ML30_12_Active\":true,\"ML40_13_Active\":true,\"ML40_14_Active\":true,\"ML10_1_Idle\":true,\"ML10_2_Idle\":true,\"ML10_3_Idle\":true,\"ML10_4_Idle\":true,\"ML20_5_Idle\":true,\"ML20_6_Idle\":true,\"ML20_7_Idle\":true,\"ML20_8_Idle\":true,\"ML30_9_Idle\":true,\"ML30_10_Idle\":false,\"ML30_11_Idle\":false,\"ML30_12_Idle\":true,\"ML40_13_Idle\":true,\"ML40_14_Idle\":false,\"ML10_1_Breakdown\":false,\"ML10_2_Breakdown\":false,\"ML10_3_Breakdown\":false,\"ML10_4_Breakdown\":false,\"ML20_5_Breakdown\":false,\"ML20_6_Breakdown\":false,\"ML20_7_Breakdown\":false,\"ML20_8_Breakdown\":false,\"ML30_9_Breakdown\":false,\"ML30_10_Breakdown\":false,\"ML30_11_Breakdown\":false,\"ML30_12_Breakdown\":false,\"ML40_13_Breakdown\":false,\"ML40_14_Breakdown\":false,\"ML10_1_Battery\":false,\"ML10_2_Battery\":true,\"ML10_3_Battery\":false,\"ML10_4_Battery\":true,\"ML20_5_Battery\":false,\"ML20_6_Battery\":false,\"ML20_7_Battery\":false,\"ML20_8_Battery\":false,\"ML30_9_Battery\":false,\"ML30_10_Battery\":false,\"ML30_11_Battery\":false,\"ML30_12_Battery\":false,\"ML40_13_Battery\":false,\"ML40_14_Battery\":false}",
         "payloadType": "json",
-        "x": 140,
+        "x": 90,
         "y": 40,
         "wires": [
             []
@@ -9273,7 +9569,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 480,
-        "y": 80,
+        "y": 60,
         "wires": []
     },
     {
@@ -9291,9 +9587,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"ML10_1_Battery\":false}",
+        "payload": "{\"ML10_1_Battery\":true}",
         "payloadType": "json",
-        "x": 90,
+        "x": 140,
         "y": 100,
         "wires": [
             []
