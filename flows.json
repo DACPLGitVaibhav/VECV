@@ -7316,58 +7316,6 @@
         ]
     },
     {
-        "id": "dc462fec4efde72f",
-        "type": "catch",
-        "z": "4130cccc0fa67e06",
-        "name": "",
-        "scope": "group",
-        "uncaught": false,
-        "x": 70,
-        "y": 220,
-        "wires": [
-            [
-                "e1fc15c4a293b33c"
-            ]
-        ]
-    },
-    {
-        "id": "e1fc15c4a293b33c",
-        "type": "function",
-        "z": "4130cccc0fa67e06",
-        "name": "ERROR FUNCTION",
-        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 280,
-        "y": 220,
-        "wires": [
-            [
-                "c4d95e0c516f4e5b"
-            ]
-        ]
-    },
-    {
-        "id": "c4d95e0c516f4e5b",
-        "type": "file",
-        "z": "4130cccc0fa67e06",
-        "name": "",
-        "filename": "D:\\JBM\\Log\\ML_10_Error.txt",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 520,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "4720de6d2b901b69",
         "type": "inject",
         "z": "4130cccc0fa67e06",
@@ -7478,58 +7426,6 @@
             [
                 "fffcd90833e2b278"
             ]
-        ]
-    },
-    {
-        "id": "71e6550b47e02f4a",
-        "type": "catch",
-        "z": "48c45cbe6bb6019f",
-        "name": "",
-        "scope": "group",
-        "uncaught": false,
-        "x": 70,
-        "y": 220,
-        "wires": [
-            [
-                "ef20178f260946f3"
-            ]
-        ]
-    },
-    {
-        "id": "ef20178f260946f3",
-        "type": "function",
-        "z": "48c45cbe6bb6019f",
-        "name": "ERROR FUNCTION",
-        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 280,
-        "y": 220,
-        "wires": [
-            [
-                "659bc7b1c13a1d56"
-            ]
-        ]
-    },
-    {
-        "id": "659bc7b1c13a1d56",
-        "type": "file",
-        "z": "48c45cbe6bb6019f",
-        "name": "",
-        "filename": "D:\\JBM\\Log\\ML_20_Error.txt",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 520,
-        "y": 220,
-        "wires": [
-            []
         ]
     },
     {
@@ -7646,58 +7542,6 @@
         ]
     },
     {
-        "id": "679d80dd01b4153d",
-        "type": "catch",
-        "z": "4cb0b90ae176b7d1",
-        "name": "",
-        "scope": "group",
-        "uncaught": false,
-        "x": 70,
-        "y": 220,
-        "wires": [
-            [
-                "c722d3c1e78ef36c"
-            ]
-        ]
-    },
-    {
-        "id": "c722d3c1e78ef36c",
-        "type": "function",
-        "z": "4cb0b90ae176b7d1",
-        "name": "ERROR FUNCTION",
-        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 280,
-        "y": 220,
-        "wires": [
-            [
-                "99c4ad02c58f5339"
-            ]
-        ]
-    },
-    {
-        "id": "99c4ad02c58f5339",
-        "type": "file",
-        "z": "4cb0b90ae176b7d1",
-        "name": "",
-        "filename": "D:\\JBM\\Log\\ML_30_Error.txt",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 520,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "86b7dd3ac009cbd9",
         "type": "inject",
         "z": "4cb0b90ae176b7d1",
@@ -7811,58 +7655,6 @@
         ]
     },
     {
-        "id": "50cc9b032a58ca0a",
-        "type": "catch",
-        "z": "bc2aab26b1ba020d",
-        "name": "",
-        "scope": "group",
-        "uncaught": false,
-        "x": 70,
-        "y": 220,
-        "wires": [
-            [
-                "10d1291593e6cb0d"
-            ]
-        ]
-    },
-    {
-        "id": "10d1291593e6cb0d",
-        "type": "function",
-        "z": "bc2aab26b1ba020d",
-        "name": "ERROR FUNCTION",
-        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 280,
-        "y": 220,
-        "wires": [
-            [
-                "239fb17d05d9ba6c"
-            ]
-        ]
-    },
-    {
-        "id": "239fb17d05d9ba6c",
-        "type": "file",
-        "z": "bc2aab26b1ba020d",
-        "name": "",
-        "filename": "D:\\JBM\\Log\\ML_40_Error.txt",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 520,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "a28a0446ca5e4b90",
         "type": "inject",
         "z": "bc2aab26b1ba020d",
@@ -7947,58 +7739,6 @@
             [
                 "func001"
             ]
-        ]
-    },
-    {
-        "id": "a307dca4be505910",
-        "type": "catch",
-        "z": "d56e9038cfc4ecfb",
-        "name": "",
-        "scope": "group",
-        "uncaught": false,
-        "x": 290,
-        "y": 280,
-        "wires": [
-            [
-                "0b61a2f5e1089f4a"
-            ]
-        ]
-    },
-    {
-        "id": "0b61a2f5e1089f4a",
-        "type": "function",
-        "z": "d56e9038cfc4ecfb",
-        "name": "ERROR FUNCTION",
-        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 500,
-        "y": 280,
-        "wires": [
-            [
-                "7a9451015cbe1bab"
-            ]
-        ]
-    },
-    {
-        "id": "7a9451015cbe1bab",
-        "type": "file",
-        "z": "d56e9038cfc4ecfb",
-        "name": "",
-        "filename": "D:\\JBM\\Log\\ACTIntruption_collision.txt",
-        "filenameType": "str",
-        "appendNewline": true,
-        "createDir": true,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 770,
-        "y": 280,
-        "wires": [
-            []
         ]
     },
     {
@@ -8118,61 +7858,8 @@
         "y": 160,
         "wires": [
             [
-                "1fbcdd4a705b349d",
-                "dcb67c1897af8ee8"
+                "1fbcdd4a705b349d"
             ]
-        ]
-    },
-    {
-        "id": "1733551e7bda5e31",
-        "type": "catch",
-        "z": "d2f524c7386c779e",
-        "name": "",
-        "scope": "group",
-        "uncaught": true,
-        "x": 90,
-        "y": 380,
-        "wires": [
-            [
-                "b893b3660daad1a7"
-            ]
-        ]
-    },
-    {
-        "id": "b893b3660daad1a7",
-        "type": "function",
-        "z": "d2f524c7386c779e",
-        "name": "ERROR FUNCTION",
-        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 300,
-        "y": 380,
-        "wires": [
-            [
-                "f3fd20f943fb49ce"
-            ]
-        ]
-    },
-    {
-        "id": "f3fd20f943fb49ce",
-        "type": "file",
-        "z": "d2f524c7386c779e",
-        "name": "",
-        "filename": "D:\\JBM\\Log\\cycle_Time.txt",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 540,
-        "y": 380,
-        "wires": [
-            []
         ]
     },
     {
@@ -8211,22 +7898,6 @@
                 "func_proc_call"
             ]
         ]
-    },
-    {
-        "id": "dcb67c1897af8ee8",
-        "type": "debug",
-        "z": "d2f524c7386c779e",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 760,
-        "y": 220,
-        "wires": []
     },
     {
         "id": "66bba6ee10c1fb07",
@@ -8333,58 +8004,6 @@
         "payloadType": "json",
         "x": 160,
         "y": 40,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "76279a7f6718e1ac",
-        "type": "function",
-        "z": "1a84d6e3645699d7",
-        "name": "ERROR FUNCTION",
-        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 300,
-        "y": 220,
-        "wires": [
-            [
-                "5af90ae4fad3b29a"
-            ]
-        ]
-    },
-    {
-        "id": "fc8edf9deb11c8e6",
-        "type": "catch",
-        "z": "1a84d6e3645699d7",
-        "name": "",
-        "scope": "group",
-        "uncaught": false,
-        "x": 90,
-        "y": 220,
-        "wires": [
-            [
-                "76279a7f6718e1ac"
-            ]
-        ]
-    },
-    {
-        "id": "5af90ae4fad3b29a",
-        "type": "file",
-        "z": "1a84d6e3645699d7",
-        "name": "",
-        "filename": "D:\\JBM\\Log\\Flow_Current_Torque_Temp.txt",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": false,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 590,
-        "y": 220,
         "wires": [
             []
         ]
@@ -8500,74 +8119,6 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "d00de496a9062d62",
-        "type": "catch",
-        "z": "77b8f05fc0c712f8",
-        "name": "",
-        "scope": null,
-        "uncaught": false,
-        "x": 100,
-        "y": 260,
-        "wires": [
-            [
-                "d028cbe47d2f6524"
-            ]
-        ]
-    },
-    {
-        "id": "d028cbe47d2f6524",
-        "type": "function",
-        "z": "77b8f05fc0c712f8",
-        "name": "ERROR FUNCTION",
-        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 320,
-        "y": 260,
-        "wires": [
-            [
-                "acc3a7f7277f2523"
-            ]
-        ]
-    },
-    {
-        "id": "acc3a7f7277f2523",
-        "type": "file",
-        "z": "77b8f05fc0c712f8",
-        "name": "",
-        "filename": "D:\\JBM\\Log\\HP_Insert_Update.txt",
-        "filenameType": "str",
-        "appendNewline": true,
-        "createDir": true,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 580,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e754287c373e329f",
-        "type": "debug",
-        "z": "77b8f05fc0c712f8",
-        "name": "debug 3",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 520,
-        "y": 100,
-        "wires": []
     },
     {
         "id": "673eb79b18be7e2d",
@@ -8737,74 +8288,6 @@
         ]
     },
     {
-        "id": "42bc434680540376",
-        "type": "file",
-        "z": "9dab2313a2f19c0b",
-        "name": "",
-        "filename": "D:\\JBM\\Log\\Line_Layout.txt",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 500,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "42e29c5abd30121c",
-        "type": "function",
-        "z": "9dab2313a2f19c0b",
-        "name": "ERROR FUNCTION",
-        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 260,
-        "y": 320,
-        "wires": [
-            [
-                "42bc434680540376"
-            ]
-        ]
-    },
-    {
-        "id": "8c600e6d30733480",
-        "type": "catch",
-        "z": "9dab2313a2f19c0b",
-        "name": "",
-        "scope": "group",
-        "uncaught": true,
-        "x": 70,
-        "y": 320,
-        "wires": [
-            [
-                "42e29c5abd30121c"
-            ]
-        ]
-    },
-    {
-        "id": "2c7a28d0a5edddca",
-        "type": "debug",
-        "z": "9dab2313a2f19c0b",
-        "name": "debug 5",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 620,
-        "y": 80,
-        "wires": []
-    },
-    {
         "id": "e67acb59bb0caf1d",
         "type": "status",
         "z": "502c7cc05ab695d2",
@@ -8858,60 +8341,6 @@
         ]
     },
     {
-        "id": "60780780c64cc66e",
-        "type": "catch",
-        "z": "502c7cc05ab695d2",
-        "name": "",
-        "scope": [
-            "01e778e4a88376b9"
-        ],
-        "uncaught": false,
-        "x": 190,
-        "y": 200,
-        "wires": [
-            [
-                "8d66ee34c8417fd3"
-            ]
-        ]
-    },
-    {
-        "id": "8d66ee34c8417fd3",
-        "type": "function",
-        "z": "502c7cc05ab695d2",
-        "name": "ERROR FUNCTION",
-        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 460,
-        "y": 200,
-        "wires": [
-            [
-                "fdd2dae9dc14dc0e"
-            ]
-        ]
-    },
-    {
-        "id": "fdd2dae9dc14dc0e",
-        "type": "file",
-        "z": "502c7cc05ab695d2",
-        "name": "",
-        "filename": "D:\\JBM\\Log\\PLC_Status.txt",
-        "filenameType": "str",
-        "appendNewline": true,
-        "createDir": false,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 740,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "70a844866d4e64b1",
         "type": "s7 in",
         "z": "502c7cc05ab695d2",
@@ -8921,6 +8350,61 @@
         "name": "PLC Status",
         "x": 190,
         "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c36ab615a138b59c",
+        "type": "ping",
+        "z": "502c7cc05ab695d2",
+        "protocol": "IPv4",
+        "mode": "timed",
+        "name": "SQL_Ping",
+        "host": "10.119.1.238",
+        "timer": "20",
+        "inputs": 0,
+        "x": 200,
+        "y": 220,
+        "wires": [
+            [
+                "c677e6280d572dd2"
+            ]
+        ]
+    },
+    {
+        "id": "c677e6280d572dd2",
+        "type": "function",
+        "z": "502c7cc05ab695d2",
+        "name": "function 1",
+        "func": "let timestamp = new Date().toLocaleString();\n\nif (msg.payload === false) {\n\n    msg.payload = `[${timestamp}] Status: ${msg.payload}`;\n\n    return msg;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 220,
+        "wires": [
+            [
+                "add4277893c7632f"
+            ]
+        ]
+    },
+    {
+        "id": "add4277893c7632f",
+        "type": "file",
+        "z": "502c7cc05ab695d2",
+        "name": "",
+        "filename": "D:\\JBM\\Log\\PLC_Status.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 620,
+        "y": 220,
         "wires": [
             []
         ]
@@ -8989,58 +8473,6 @@
         ]
     },
     {
-        "id": "5f12a227200c4ba7",
-        "type": "file",
-        "z": "047a2ed188a4b718",
-        "name": "",
-        "filename": "D:\\JBM\\Log\\Robot_health_Status.txt",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 530,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c669e5a84ee67c89",
-        "type": "function",
-        "z": "047a2ed188a4b718",
-        "name": "ERROR FUNCTION",
-        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 260,
-        "y": 240,
-        "wires": [
-            [
-                "5f12a227200c4ba7"
-            ]
-        ]
-    },
-    {
-        "id": "44766b6a65080c18",
-        "type": "catch",
-        "z": "047a2ed188a4b718",
-        "name": "",
-        "scope": "group",
-        "uncaught": false,
-        "x": 70,
-        "y": 240,
-        "wires": [
-            [
-                "c669e5a84ee67c89"
-            ]
-        ]
-    },
-    {
         "id": "10806e42120858f9",
         "type": "inject",
         "z": "047a2ed188a4b718",
@@ -9062,22 +8494,6 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "315ef47236e744bb",
-        "type": "debug",
-        "z": "047a2ed188a4b718",
-        "name": "debug 4",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 480,
-        "y": 60,
-        "wires": []
     },
     {
         "id": "76ff43ce64cdac1e",
@@ -9111,66 +8527,14 @@
         "variable": "",
         "diff": true,
         "name": "Shift Production",
-        "x": 160,
-        "y": 260,
+        "x": 180,
+        "y": 60,
         "wires": [
             [
                 "349d171e0be9b349",
                 "15dd4348d34556c9",
                 "f981d84456b2f761"
             ]
-        ]
-    },
-    {
-        "id": "519c5a1eac7e44e3",
-        "type": "catch",
-        "z": "a1e07c2d53e4c8ee",
-        "name": "",
-        "scope": "group",
-        "uncaught": false,
-        "x": 170,
-        "y": 580,
-        "wires": [
-            [
-                "0f1885f3c2a2ba7a"
-            ]
-        ]
-    },
-    {
-        "id": "0f1885f3c2a2ba7a",
-        "type": "function",
-        "z": "a1e07c2d53e4c8ee",
-        "name": "ERROR FUNCTION",
-        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 380,
-        "y": 580,
-        "wires": [
-            [
-                "767599ffc87e6df3"
-            ]
-        ]
-    },
-    {
-        "id": "767599ffc87e6df3",
-        "type": "file",
-        "z": "a1e07c2d53e4c8ee",
-        "name": "",
-        "filename": "D:\\JBM\\Log\\Shift_Production_Insert.txt",
-        "filenameType": "str",
-        "appendNewline": true,
-        "createDir": true,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 690,
-        "y": 580,
-        "wires": [
-            []
         ]
     },
     {
@@ -9190,8 +8554,8 @@
         "topic": "",
         "payload": "{\"SHIFT_A\":true,\"TARGETA\":100,\"ACTUALLHA\":101,\"ACTUALRHA\":102,\"Actual_CountA\":203}",
         "payloadType": "json",
-        "x": 140,
-        "y": 320,
+        "x": 160,
+        "y": 120,
         "wires": [
             []
         ]
@@ -9208,8 +8572,8 @@
         "septopics": true,
         "property": "payload.SHIFT_A",
         "topi": "topic",
-        "x": 390,
-        "y": 280,
+        "x": 410,
+        "y": 80,
         "wires": [
             [
                 "753ae9414ad99a7c"
@@ -9228,8 +8592,8 @@
         "septopics": true,
         "property": "payload.SHIFT_B",
         "topi": "topic",
-        "x": 390,
-        "y": 320,
+        "x": 410,
+        "y": 120,
         "wires": [
             [
                 "6d65d443228d2183"
@@ -9248,8 +8612,8 @@
         "septopics": true,
         "property": "payload.SHIFT_C",
         "topi": "topic",
-        "x": 390,
-        "y": 360,
+        "x": 410,
+        "y": 160,
         "wires": [
             [
                 "8c23ce57eb8056fa"
@@ -9273,8 +8637,8 @@
         "topic": "",
         "payload": "{\"SHIFT_A\":false,\"TARGETA\":120,\"ACTUALLHA\":58,\"ACTUALRHA\":59,\"Actual_CountA\":117}",
         "payloadType": "json",
-        "x": 140,
-        "y": 360,
+        "x": 160,
+        "y": 160,
         "wires": [
             []
         ]
@@ -9296,8 +8660,8 @@
         "topic": "",
         "payload": "{\"SHIFT_C\":true,\"TARGETC\":400,\"ACTUALLHC\":401,\"ACTUALRHC\":402,\"Actual_CountC\":803}",
         "payloadType": "json",
-        "x": 160,
-        "y": 480,
+        "x": 180,
+        "y": 280,
         "wires": [
             []
         ]
@@ -9319,8 +8683,8 @@
         "topic": "",
         "payload": "{\"SHIFT_C\":false,\"TARGETC\":120,\"ACTUALLHC\":58,\"ACTUALRHC\":59,\"Actual_CountC\":117}",
         "payloadType": "json",
-        "x": 180,
-        "y": 520,
+        "x": 200,
+        "y": 320,
         "wires": [
             []
         ]
@@ -9342,8 +8706,8 @@
         "topic": "",
         "payload": "{\"SHIFT_B\":true,\"TARGETB\":300,\"ACTUALLHB\":301,\"ACTUALRHB\":302,\"Actual_CountB\":603}",
         "payloadType": "json",
-        "x": 160,
-        "y": 400,
+        "x": 180,
+        "y": 200,
         "wires": [
             []
         ]
@@ -9365,8 +8729,8 @@
         "topic": "",
         "payload": "{\"SHIFT_B\":false,\"TARGETB\":120,\"ACTUALLHB\":58,\"ACTUALRHB\":59,\"Actual_CountB\":117}",
         "payloadType": "json",
-        "x": 140,
-        "y": 440,
+        "x": 160,
+        "y": 240,
         "wires": [
             []
         ]
@@ -9383,8 +8747,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 580,
-        "y": 280,
+        "x": 600,
+        "y": 80,
         "wires": [
             [
                 "bc4b81756d8a2703"
@@ -9403,8 +8767,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 580,
-        "y": 320,
+        "x": 600,
+        "y": 120,
         "wires": [
             [
                 "bc4b81756d8a2703"
@@ -9423,8 +8787,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 580,
-        "y": 360,
+        "x": 600,
+        "y": 160,
         "wires": [
             [
                 "bc4b81756d8a2703"
@@ -9451,97 +8815,10 @@
         "rowsType": "msg",
         "parseMustache": true,
         "params": [],
-        "x": 780,
-        "y": 320,
+        "x": 800,
+        "y": 120,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "2ef5fa6b89b34a16",
-        "type": "debug",
-        "z": "a1e07c2d53e4c8ee",
-        "name": "debug 8",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 560,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "c579134451554d8c",
-        "type": "debug",
-        "z": "a1e07c2d53e4c8ee",
-        "name": "debug 9",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 580,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "8c38735c212bf91e",
-        "type": "debug",
-        "z": "a1e07c2d53e4c8ee",
-        "name": "debug 10",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1020,
-        "y": 180,
-        "wires": []
-    },
-    {
-        "id": "516b0f5c52f1c703",
-        "type": "function",
-        "z": "a1e07c2d53e4c8ee",
-        "name": "function 6",
-        "func": "node.warn(flow.get('previousTags_B'));\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 800,
-        "y": 180,
-        "wires": [
-            [
-                "8c38735c212bf91e"
-            ]
-        ]
-    },
-    {
-        "id": "4fb4f218bd7d5661",
-        "type": "inject",
-        "z": "a1e07c2d53e4c8ee",
-        "name": "Test",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 610,
-        "y": 200,
-        "wires": [
-            [
-                "516b0f5c52f1c703"
-            ]
         ]
     },
     {
@@ -9582,58 +8859,6 @@
             [
                 "f60dcf8f8d51c628"
             ]
-        ]
-    },
-    {
-        "id": "49dbbe0e8f650b6c",
-        "type": "catch",
-        "z": "69c80b9824af6584",
-        "name": "",
-        "scope": "group",
-        "uncaught": false,
-        "x": 110,
-        "y": 380,
-        "wires": [
-            [
-                "40748b0d2a2bc553"
-            ]
-        ]
-    },
-    {
-        "id": "40748b0d2a2bc553",
-        "type": "function",
-        "z": "69c80b9824af6584",
-        "name": "ERROR FUNCTION",
-        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 320,
-        "y": 380,
-        "wires": [
-            [
-                "08b1912e961b4b88"
-            ]
-        ]
-    },
-    {
-        "id": "08b1912e961b4b88",
-        "type": "file",
-        "z": "69c80b9824af6584",
-        "name": "",
-        "filename": "D:\\JBM\\Log\\Spot_Count.txt",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": false,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 560,
-        "y": 380,
-        "wires": [
-            []
         ]
     },
     {
@@ -9705,22 +8930,6 @@
                 "64b7817849b9704c"
             ]
         ]
-    },
-    {
-        "id": "d60693068c3492d0",
-        "type": "debug",
-        "z": "69c80b9824af6584",
-        "name": "debug 6",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 860,
-        "y": 80,
-        "wires": []
     },
     {
         "id": "1a8c0ecd51390be7",
@@ -9932,58 +9141,6 @@
         ]
     },
     {
-        "id": "fa85df4d6ecd0f61",
-        "type": "catch",
-        "z": "5872bea43d03ee26",
-        "name": "",
-        "scope": "group",
-        "uncaught": true,
-        "x": 75,
-        "y": 223.00000762939453,
-        "wires": [
-            [
-                "0f9740da1a78591c"
-            ]
-        ]
-    },
-    {
-        "id": "0f9740da1a78591c",
-        "type": "function",
-        "z": "5872bea43d03ee26",
-        "name": "ERROR FUNCTION",
-        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 285,
-        "y": 223.00000762939453,
-        "wires": [
-            [
-                "0da72c987b93ed32"
-            ]
-        ]
-    },
-    {
-        "id": "0da72c987b93ed32",
-        "type": "file",
-        "z": "5872bea43d03ee26",
-        "name": "",
-        "filename": "D:\\JBM\\Log\\Target_Daily_Monthly.txt",
-        "filenameType": "str",
-        "appendNewline": false,
-        "createDir": true,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 570,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "2049f51dcd2989c3",
         "type": "inject",
         "z": "5872bea43d03ee26",
@@ -10071,58 +9228,6 @@
         ]
     },
     {
-        "id": "db8621b7774af121",
-        "type": "catch",
-        "z": "b225c926a1394a08",
-        "name": "",
-        "scope": "group",
-        "uncaught": false,
-        "x": 170,
-        "y": 240,
-        "wires": [
-            [
-                "2104cae33c39f48c"
-            ]
-        ]
-    },
-    {
-        "id": "2104cae33c39f48c",
-        "type": "function",
-        "z": "b225c926a1394a08",
-        "name": "ERROR FUNCTION",
-        "func": "msg.payload = `[${new Date().toLocaleString()}] ERROR: ${msg.error.message}\\n`;\nreturn msg;\n\n// function formatDate(date) {\n//     let year = date.getFullYear();\n//     let month = String(date.getMonth() + 1).padStart(2, '0');\n//     let day = String(date.getDate()).padStart(2, '0');\n//     let hours = String(date.getHours()).padStart(2, '0');\n//     let minutes = String(date.getMinutes()).padStart(2, '0');\n//     let seconds = String(date.getSeconds()).padStart(2, '0');\n\n//     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;\n// }\n\n// let now = new Date();\n// const currentDate = formatDate(now);\n\n// if (msg.error && msg.error.message) {\n//     let errorMessage = msg.error.message;\n\n//     if (errorMessage.includes(\"EHOSTUNREACH\") || errorMessage.includes(\"ECONNREFUSED\")) {\n//         msg.payload = `[${currentDate}] OPCUA CONNECTION LOST: ${errorMessage}\\\\n`;\n//     } else {\n//         msg.payload = `[${currentDate}] ERROR: ${errorMessage}\\\\n`;\n//     }\n// } else {\n//     msg.payload = `[${currentDate}] UNKNOWN ERROR OCCURRED\\\\n`;\n// }\n\n// return msg;\n\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 380,
-        "y": 240,
-        "wires": [
-            [
-                "e329418541afd4a4"
-            ]
-        ]
-    },
-    {
-        "id": "e329418541afd4a4",
-        "type": "file",
-        "z": "b225c926a1394a08",
-        "name": "",
-        "filename": "D:\\JBM\\Log\\Tip_Change_Count.txt",
-        "filenameType": "str",
-        "appendNewline": true,
-        "createDir": true,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 640,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "d2e1a69d940d76cf",
         "type": "inject",
         "z": "b225c926a1394a08",
@@ -10146,22 +9251,6 @@
                 "3ace388f45e1996f"
             ]
         ]
-    },
-    {
-        "id": "15dc27dddbed0564",
-        "type": "debug",
-        "z": "b225c926a1394a08",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 520,
-        "y": 160,
-        "wires": []
     },
     {
         "id": "d3e9118137a8bcfc",
